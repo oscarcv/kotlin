@@ -145,17 +145,17 @@ data class GitLabMilestone(
     val createdAt: Instant,
     val description: String,
     @SerialName("due_date")
-    val dueDate: Instant,
+    val dueDate: Instant?,
     val id: Int,
     val iid: Int,
     @SerialName("project_id")
     val projectID: Int,
     @SerialName("start_date")
-    val startDate: Instant,
+    val startDate: Instant?,
     val state: GitLabMilestoneState,
     val title: String,
     @SerialName("updated_at")
-    val updatedAt: Instant,
+    val updatedAt: Instant?,
     @SerialName("web_url")
     val webUrl: String
 )
